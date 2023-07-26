@@ -1,0 +1,169 @@
+@import url(./vendor/fonts.css);
+@import url(./vendor/normalize.css);
+
+.main {
+    background-color: #F3F3F3;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    color: #181818;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.main__content {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+}
+.main__content-img {
+    margin-top: 80px;
+    width: 90%;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.main__img-part1 {
+    position: relative;
+    z-index: 2;
+    transition: top 2s;
+    width: 100%;
+}
+.main__img-part2 {
+    position: relative;
+    bottom: 153px;
+    left: 9px;
+    width: 100%;
+    z-index: 1;
+    transition: top 2s;
+}
+.main__buttons-blok {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.main__button{
+    font-size: 40.19px;
+    line-height: 68.33px;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    background-color: #A6FFFF;
+    width: 200.22px;
+    height: 200.22px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.main__button:hover{
+    cursor: pointer;
+    opacity: .6;
+    
+}
+.main__button:disabled{
+    background-color:#446262; 
+    opacity: .3;
+    cursor: default;
+}
+.main__buttons-up {
+}
+.main__buttons-down {
+}
+.main__content-text {
+    max-width: 500px;
+}
+.main__content-text_top{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.main__content-text_botton{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.main__title {
+    font-size: 62px;
+    line-height: 62px;
+    color: #0B64FE;
+    font-weight: 300;
+    margin-bottom: 62px;
+}
+.main__text {
+    font-size: 22px;
+    line-height: 37.4px;
+}
+@media screen and (max-width: 1430px){
+    .main__button{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .main__content-img{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .main__content-text_botton {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .main__content-text{
+        margin: 0 auto;
+    }
+    .main__content-img{
+        margin: 40px auto 0;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 850px){
+    .main{
+        padding: 0 12px;
+    }
+    .main__title{
+        margin: 15px 0 30px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 38px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .main__text{
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+    .main__button{
+        width: 61px;
+        height: 61px;
+        font-size: 12.28px;
+        line-height: 20.28px;
+    }
+    .main__img-part2{
+        bottom: 130px;
+        left: 6px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main__title{
+        max-width: 210px;
+        text-align: left;
+    }
+    .main__img-part2 {
+        bottom: 77px;
+        left: 6px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main__img-part2 {
+        bottom: 50px;
+        left: 2px;
+    }
+    .main__content-img{
+        width: 100%;
+    }
+}
+
+
+
+
+
