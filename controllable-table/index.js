@@ -9,8 +9,10 @@ buttonUp.addEventListener("click", function(){
     buttonDown.disabled = false;
     if (window.innerWidth > 850){
         imgPart1.style.top = '-80px';
-    } else {
+    } else if (window.innerWidth > 450) {
         imgPart1.style.top = '-40px';
+    } else {
+        imgPart1.style.top = '-30px';
     }
 })
 
